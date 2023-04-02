@@ -10,11 +10,16 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+<<<<<<< HEAD
       searchResults: [
+=======
+      SearchResults: [
+>>>>>>> 66c8fb393cfe504dce17cd3bca447bfd3972aa88
         { name: "name1", artist: "artist1", album: "album1", id: 1 },
         { name: "name2", artist: "artist2", album: "album2", id: 2 },
         { name: "name3", artist: "artist3", album: "album3", id: 3 },
       ],
+<<<<<<< HEAD
       playlistName: "My Playlist",
       playlistTracks: [
         {
@@ -67,6 +72,9 @@ class App extends React.Component {
 
   savePlaylist() {
     const trackURIs = this.state.playlistTracks.map((track) => track.uri);
+=======
+    };
+>>>>>>> 66c8fb393cfe504dce17cd3bca447bfd3972aa88
   }
 
   render() {
@@ -78,6 +86,7 @@ class App extends React.Component {
         <div className="App">
           <SearchBar />
           <div className="App-playlist">
+<<<<<<< HEAD
             <SearchResults
               searchResults={this.state.searchResults}
               onAdd={this.addTrack}
@@ -89,6 +98,10 @@ class App extends React.Component {
               onNameChange={this.updatePlaylistName}
               onSave={this.savePlaylist}
             />
+=======
+            <SearchResults />
+            <Playlist />
+>>>>>>> 66c8fb393cfe504dce17cd3bca447bfd3972aa88
           </div>
         </div>
       </div>

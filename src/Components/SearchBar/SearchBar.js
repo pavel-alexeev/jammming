@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
           onChange={this.handleTermChange}
         />
         <button className="SearchButton" onClick={this.search}>
-          SEARCH
+          SEARCH SONGS
         </button>
       </div>
     );
